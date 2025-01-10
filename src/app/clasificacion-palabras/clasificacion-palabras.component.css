@@ -1,0 +1,45 @@
+/* src/app/clasificacion-palabras/clasificacion-palabras.component.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+li:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+li:hover {
+  background-color: #e9ecef;
+}
+
+.center-content {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  border-bottom: 2px solid #000;
+}
