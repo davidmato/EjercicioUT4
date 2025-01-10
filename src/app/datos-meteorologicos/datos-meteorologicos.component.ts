@@ -12,6 +12,7 @@ type Dia = {
   selector: 'app-datos-meteorologicos',
   imports: [NgFor],
   templateUrl: './datos-meteorologicos.component.html',
+  standalone: true,
   styleUrls: ['./datos-meteorologicos.component.css']
 })
 export class DatosMeteorologicosComponent {

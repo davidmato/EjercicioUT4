@@ -17,6 +17,7 @@ type Pelicula = {
   selector: 'app-catalogo-peliculas',
   imports: [NgFor, FormsModule],
   templateUrl: './catalogo-peliculas.component.html',
+  standalone: true,
   styleUrl: './catalogo-peliculas.component.css'
 })
 export class CatalogoPeliculasComponent {

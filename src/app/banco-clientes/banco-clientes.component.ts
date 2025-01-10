@@ -10,7 +10,8 @@ import {NgFor} from '@angular/common';
   imports: [
     FormsModule, NgFor
   ],
-  styleUrls: ['./banco-clientes.component.css']
+  styleUrls: ['./banco-clientes.component.css'],
+  standalone: true
 })
 export class BancoClientesComponent implements OnInit {
   banco: Banco = new Banco();

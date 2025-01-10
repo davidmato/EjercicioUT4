@@ -8,8 +8,9 @@ import { NgFor, NgIf } from '@angular/common';
   selector: 'app-zoologico-virtual',
   templateUrl: './zoologico-virtual.component.html',
   imports: [
-    FormsModule, NgFor, NgIf
+    FormsModule, NgFor
   ],
+  standalone: true,
   styleUrls: ['./zoologico-virtual.component.css']
 })
 export class ZoologicoVirtualComponent implements OnInit {

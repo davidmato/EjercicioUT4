@@ -6,6 +6,7 @@ import {NgFor} from '@angular/common';
   selector: 'app-transformacion-listado-productos',
   templateUrl: './transformacion-listado-productos.component.html',
   styleUrls: ['./transformacion-listado-productos.component.css'],
+  standalone: true,
   imports:[FormsModule, NgFor]
 })
 export class TransformacionListadoProductosComponent {
