@@ -3,13 +3,14 @@ import { FormsModule } from '@angular/forms';
 import {CurrencyPipe, NgFor} from '@angular/common';
 
 @Component({
-  selector: 'app-gestionpedidos',
+  selector: 'app-gestion-pedidos',
   imports: [
     FormsModule,
     CurrencyPipe,
     NgFor
   ],
   templateUrl: './gestionpedidos.component.html',
+  standalone: true,
   styleUrls: ['./gestionpedidos.component.css']
 })
 export class GestionpedidosComponent {
