@@ -1,0 +1,20 @@
+<div>
+  <h4>Películas de Drama:</h4>
+  <ul>
+    <li *ngFor="let pelicula of peliculasDrama">
+      {{ pelicula.titulo }} - {{ pelicula.director }} ({{ pelicula.anyo }}) - Calificación: {{ pelicula.calificacion }}
+      <input type="number" [(ngModel)]="pelicula.nuevaCalificacion" placeholder="Nueva calificación">
+      <button (click)="actualizarCalificacion(pelicula.titulo, pelicula.nuevaCalificacion)">Actualizar</button>
+    </li>
+  </ul>
+
+  <h4>Las 3 películas mejor calificadas:</h4>
+  <ul>
+    <li *ngFor="let pelicula of top3Peliculas">
+      {{ pelicula.titulo }} - {{ pelicula.director }} ({{ pelicula.anyo }}) - Calificación: {{ pelicula.calificacion }}
+    </li>
+  </ul>
+
+  <h4>Calificación promedio de todas las películas:</h4>
+  <p>{{ promedioCalificaciones }}</p>
+</div>

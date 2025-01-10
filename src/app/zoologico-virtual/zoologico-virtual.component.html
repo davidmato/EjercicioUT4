@@ -1,0 +1,43 @@
+<div>
+  <label for="especie">Especie:</label>
+  <input type="text" id="especie" [(ngModel)]="especie">
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" [(ngModel)]="nombre">
+
+  <label for="edad">Edad:</label>
+  <input type="number" id="edad" [(ngModel)]="edad">
+
+  <label for="habitat">Hábitat:</label>
+  <input type="text" id="habitat" [(ngModel)]="habitat">
+
+  <button (click)="agregarAnimal()">Agregar Animal</button>
+  <button (click)="buscarAnimalesPorEspecie()">Buscar por Especie</button>
+  <button (click)="mostrarAnimalesPorHabitat()">Mostrar por Hábitat</button>
+
+  <p>{{ mensaje }}</p>
+
+  <h3>Animales:</h3>
+  <ul>
+    <li *ngFor="let animal of obtenerAnimales()">
+      {{ animal.mostrarInformacion() }}
+      <button (click)="incrementarEdad(animal)">Incrementar Edad</button>
+      <input type="text" [(ngModel)]="nuevoHabitat" placeholder="Nuevo Hábitat">
+      <button (click)="cambiarHabitat(animal, nuevoHabitat)">Cambiar Hábitat</button>
+    </li>
+  </ul>
+
+  <h3>Animales por Especie:</h3>
+  <ul>
+    <li *ngFor="let animal of animalesPorEspecie">
+      {{ animal.mostrarInformacion() }}
+    </li>
+  </ul>
+
+  <h3>Animales por Hábitat:</h3>
+  <ul>
+    <li *ngFor="let animal of animalesPorHabitat">
+      {{ animal.mostrarInformacion() }}
+    </li>
+  </ul>
+</div>

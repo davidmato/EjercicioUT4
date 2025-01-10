@@ -1,0 +1,13 @@
+<div>
+  <h4>Datos Meteorológicos</h4>
+  <p>Temperatura promedio: {{ calcularTemperaturaPromedio() }}ºC</p>
+  <h5>Días con lluvia:</h5>
+  <ul>
+    <li *ngFor="let dia of filtrarDiasConLluvia()">
+      {{ dia.fecha }} - Precipitación: {{ dia.precipitacion }}mm
+    </li>
+  </ul>
+  <p>Día con la temperatura más alta: {{ encontrarDiaConTemperaturaMasAlta().fecha }} - {{ encontrarDiaConTemperaturaMasAlta().temperatura }}ºC</p>
+  <h5>Resumen de días:</h5>
+  <pre class="resumen-box">{{ resumenDelMes() }}</pre>
+</div>

@@ -1,0 +1,39 @@
+<div>
+  <h4>Pedidos:</h4>
+  <ul>
+    <li *ngFor="let pedido of pedidos">
+      Pedido ID: {{ pedido.id }} - Cliente: {{ pedido.cliente }} - Total: {{ pedido.calculaTotal() | currency }}
+      <ul>
+        <li *ngFor="let plato of pedido.platos">
+          {{ plato.nombre }} - {{ plato.precio | currency }}
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+  <h4>Total de Ventas:</h4>
+  <p>{{ calcularTotalVentas() | currency }}</p>
+
+  <h4>Buscar Pedidos por Cliente:</h4>
+  <input type="text" [(ngModel)]="clienteBusqueda" placeholder="Nombre del cliente">
+  <button (click)="buscarPedidos()">Buscar</button>
+  <ul>
+    <li *ngFor="let pedido of pedidosCliente">
+      Pedido ID: {{ pedido.id }} - Cliente: {{ pedido.cliente }} - Total: {{ pedido.calculaTotal() | currency }}
+    </li>
+  </ul>
+
+  <h4>Filtrar Pedidos por Total Mayor a:</h4>
+  <input type="number" [(ngModel)]="totalMinimo" placeholder="Cantidad mínima">
+  <button (click)="filtrarPedidos()">Filtrar</button>
+  <ul>
+    <li *ngFor="let pedido of pedidosFiltrados">
+      Pedido ID: {{ pedido.id }} - Cliente: {{ pedido.cliente }} - Total: {{ pedido.calculaTotal() | currency }}
+    </li>
+  </ul>
+
+  <h4>Agregar Pedido:</h4>
+  <input type="number" [(ngModel)]="nuevoPedido.id" placeholder="ID del pedido">
+  <input type="text" [(ngModel)]="nuevoPedido.cliente" placeholder="Nombre del cliente">
+  <button (click)="agregarPedido()">Agregar Pedido</button>
+</div>

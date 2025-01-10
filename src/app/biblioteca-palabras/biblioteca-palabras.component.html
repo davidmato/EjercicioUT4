@@ -1,0 +1,21 @@
+<div>
+  <h2>Biblioteca de Palabras Clave</h2>
+  <div>
+    <label for="palabraBuscar">Buscar palabra clave:</label>
+    <input id="palabraBuscar" [(ngModel)]="palabraBuscar" />
+    <button (click)="buscarPalabra()">Buscar</button>
+    <p *ngIf="mensajeBusqueda">{{ mensajeBusqueda }}</p>
+  </div>
+  <div>
+    <label for="palabraAnadir">Añadir palabra clave:</label>
+    <input id="palabraAnadir" [(ngModel)]="palabraAnadir" />
+    <button (click)="anadirPalabra()">Añadir</button>
+    <p *ngIf="mensajeAnadir">{{ mensajeAnadir }}</p>
+  </div>
+  <div>
+    <button (click)="ordenarPalabras()">Ordenar palabras alfabéticamente</button>
+    <ul>
+      <li *ngFor="let palabra of keywords">{{ palabra }}</li>
+    </ul>
+  </div>
+</div>
