@@ -1,0 +1,20 @@
+<div>
+  <h3>Todas las palabras:</h3>
+  <ul>
+    <li *ngFor="let palabra of palabras">{{ palabra }}</li>
+  </ul>
+  <h3>Palabras en mayúsculas:</h3>
+  <ul>
+    <li *ngFor="let palabra of palabrasMayusculas">{{ palabra }}</li>
+  </ul>
+
+  <h3>Palabras con más de 5 letras:</h3>
+  <ul>
+    <li *ngFor="let palabra of palabrasMasDeCincoLetras">{{ palabra }}</li>
+  </ul>
+
+  <h3>Palabras ordenadas por longitud:</h3>
+  <ul>
+    <li *ngFor="let palabra of palabrasOrdenadasPorLongitud">{{ palabra }}</li>
+  </ul>
+</div>
