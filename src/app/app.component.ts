@@ -13,10 +13,11 @@ import {ClasificacionPalabrasComponent} from './clasificacion-palabras/clasifica
 import {SistemaVehiculosComponent} from './sistema-vehiculos/sistema-vehiculos.component';
 import {SistemaEmpleadosComponent} from './sistema-empleados/sistema-empleados.component';
 import {FiguraGeometricaComponent} from './figura-geometrica/figura-geometrica.component';
+import {SistemaPagosComponent} from './sistema-pagos/sistema-pagos.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CatalogoPeliculasComponent, GestionpedidosComponent, DatosMeteorologicosComponent, BibliotecaPalabrasComponent, BancoClientesComponent, ZoologicoVirtualComponent, TransformacionListadoProductosComponent, ClasificacionPalabrasComponent, SistemaVehiculosComponent, SistemaEmpleadosComponent, FiguraGeometricaComponent],
+  imports: [CatalogoPeliculasComponent, GestionpedidosComponent, DatosMeteorologicosComponent, BibliotecaPalabrasComponent, BancoClientesComponent, ZoologicoVirtualComponent, TransformacionListadoProductosComponent, ClasificacionPalabrasComponent, SistemaVehiculosComponent, SistemaEmpleadosComponent, FiguraGeometricaComponent, SistemaPagosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
