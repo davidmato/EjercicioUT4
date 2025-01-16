@@ -11,10 +11,11 @@ import {
 } from './transformacion-listado-productos/transformacion-listado-productos.component';
 import {ClasificacionPalabrasComponent} from './clasificacion-palabras/clasificacion-palabras.component';
 import {SistemaVehiculosComponent} from './sistema-vehiculos/sistema-vehiculos.component';
+import {SistemaEmpleadosComponent} from './sistema-empleados/sistema-empleados.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CatalogoPeliculasComponent, GestionpedidosComponent, DatosMeteorologicosComponent, BibliotecaPalabrasComponent, BancoClientesComponent, ZoologicoVirtualComponent, TransformacionListadoProductosComponent, ClasificacionPalabrasComponent, SistemaVehiculosComponent],
+  imports: [CatalogoPeliculasComponent, GestionpedidosComponent, DatosMeteorologicosComponent, BibliotecaPalabrasComponent, BancoClientesComponent, ZoologicoVirtualComponent, TransformacionListadoProductosComponent, ClasificacionPalabrasComponent, SistemaVehiculosComponent, SistemaEmpleadosComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
