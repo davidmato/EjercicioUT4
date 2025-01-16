@@ -1,0 +1,8 @@
+<div class="container">
+  <h3>Detalles de Empleados:</h3>
+  <ul>
+    <li *ngFor="let empleado of empleados">
+      {{ empleado.mostrarDetalles() }} - Salario Total: {{ empleado.calcularSalario() }}
+    </li>
+  </ul>
+</div>
